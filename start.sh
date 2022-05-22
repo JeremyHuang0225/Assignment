@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# wait for postgresql start
 sleep 60s
 # Apply database migrations
 python manage.py migrate
