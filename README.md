@@ -1,16 +1,11 @@
 # Assignment 項目安裝方式
 
 ## 使用 docker-compose 安裝
+> ⚠ 須先行安裝 docker 以及 docker-compose
 包含資料庫建構以及 migrate 指令操作並執行 django runserver
 
 * 資料庫使用 PostgreSQL
 * 由於安全性考量，docker 部屬時未開啟 5432 Port，若須另行操作，可於部屬流程完成之後，經由 CLI 介面進入內部設定，或是修改專案內的 docker-compose.yaml，將註解的第 13、14 行解開，在進行部屬，即可將 Port 5432 映射出來。
-
-:::warning
-
-須先行安裝 docker 以及 docker-compose
-
-:::
 
 ---
 
