@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=assignment
+      - POSTGRES_USER=assignment
+      - POSTGRES_PASSWORD=password
+      - TZ=Asia/Taipei
+    # ports:
+    #   - "5432:5432"
+  web:
+    build: .
+    command: ./start.sh
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_NAME=assignment
+      - POSTGRES_USER=assignment
+      - POSTGRES_PASSWORD=password
+      - TZ=Asia/Taipei
+    depends_on:
+      - db

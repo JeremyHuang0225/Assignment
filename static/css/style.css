@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+.section-1 {
+    margin-top: 45px;
+    display: flex;
+}
+
+.list-content-input-box {
+    margin: auto;
+    width: 500px;
+    height: 190px;
+    border: 1.8px rgba(0, 0, 0, 0.081) solid;
+}
+
+.list-content-input-title {
+    margin: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.list-content-input-content {
+    margin-left: 20px;
+}
+
+.list-content-input-span {
+    color: red;
+}
+
+.list-content-input {
+    margin-top: -10px;
+}
+.input-box{
+    width: 70%;
+}
+.content-input {
+    margin-left: 20px;
+    width: 100%;
+    height: 30px;
+    border: 1px rgb(231, 231, 231) solid;
+    outline: none;
+    padding-left: 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.372);
+}
+.content-input:disabled{
+    margin-left: 20px;
+    width: 100%;
+    height: 30px;
+    border: 1px rgb(189, 189, 189) solid;
+    outline: none;
+    padding-left: 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.372);
+    background-color: rgb(189, 189, 189);
+    transition: 0.8s;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.372);
+}
+
+.content-input-div{
+    display: flex;
+    justify-content: space-between;
+}
+.button-box{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width:20%;
+    margin: auto;
+}
+.input-error-format{
+    margin-left: 20px;
+    margin-top: 3px;
+    color:rgb(244, 77, 77);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 13px;
+}
+.content-submit {
+    width: 100%;
+    height: 31px;
+    font-size: 12px;
+    border: none;
+    background-color: rgb(231, 231, 231);
+    justify-items: center;
+    transition: 0.8s;
+}
+.content-submit:hover {
+    background-color: rgb(210, 209, 209);
+    transition: 0.8s;
+}
+.content-submit:disabled{
+    width: 100%;
+    height: 31px;
+    font-size: 12px;
+    border: none;
+    background-color: rgb(189, 188, 188);
+    justify-items: center;
+    cursor: not-allowed;
+    transition: 0.8s;
+}
+.content-submit p{
+    margin: auto;
+    justify-items: center;
+    align-items: center; 
+}
+.section-2 {
+    margin: auto;
+    margin-top: 20px;
+    width: 500px;
+    height: 190px;
+}
+
+.tab_css {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab_css input {
+    display: none;
+}
+
+.tab_css label {
+    width: 50%;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    border: 1px rgb(187, 187, 187) solid;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.tab_content {
+    display: none;
+    background: #fff;
+    order: 1;
+    margin-top: 10px;
+    width: 100%;
+    line-height: 1.6;
+    font-size: .9em;
+    padding: 15px;
+}
+
+.tab_css input:checked+label {
+    background: rgb(187, 187, 187);
+}
+
+.tab_css input:checked+label+.tab_content {
+    display: block;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    animation: fade_in_show 2.5s
+}
+
+@keyframes fade_in_show {
+    0% {
+        opacity: 0;
+        transition-delay: 3s;
+    }
+
+    100% {
+        opacity: 1;
+        transition-delay: 3s;
+    }
+}
+
+.tab_content-table-prepare,
+.tab_content-table-finnsh{
+    margin-left: -15px;
+    width: 500px;
+    line-height: 3;
+    font-size: 14px;
+    border-bottom:1px rgb(231, 230, 230) solid;
+}
+.tab_content-table-prepare .tab_content-table-prepare-title{
+    display: inline-block;
+    width: 72%;
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.tab_content-table-prepare button{
+    margin: 5px auto;
+    width: 60px;
+    text-align: center;
+    border: none;
+    transition: 0.8s;
+}
+
+.tab_content-table-prepare button:hover{
+    background-color: rgb(216, 216, 216);
+    transition: 0.8s;
+}
+.tab_content-table-finnsh-box{
+    margin-top: 10px;
+    border-bottom: 1px rgb(222, 221, 221) solid;
+}
+.tab_content-table-finnsh-box div{
+    display: inline-block;
+    line-height: 1.6em;
+    font-size: 16px;
+    color:rgb(216, 216, 216);
+    font-family: 'Noto Sans TC', sans-serif;
+    text-justify:inter-ideograph; 
+}
+.tab_content-table-finnsh-box  .finnsh-title{
+    width:80%;
+}
