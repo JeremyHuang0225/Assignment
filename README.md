@@ -26,7 +26,7 @@
 ```
 4、當所有部屬進程均執行完畢後將會出現以下告示，需再靜等約2分鐘
 
-![Alt text](static\img\readme-example01.png)
+![image](https://github.com/JeremyHuang0225/Assignment/blob/main/static/img/readme-example01.png)
 
 5、至瀏覽器打開以下連結即可進行 ToDoList 網頁瀏覽
 ```bash
