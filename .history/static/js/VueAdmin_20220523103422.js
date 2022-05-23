@@ -33,10 +33,12 @@ var app = new Vue({
             document.body.onselectstart = function () {
                 self.event.returnValue = false
             }
+        //app.GetTodolist();
     },
     components: {
         Loading: VueLoading
     },
+    //所有function寫在裡面
     methods: {
         GetTodolistprepare: function () {
             $.ajax({
@@ -131,8 +133,11 @@ var app = new Vue({
                 this.$refs.getContentValue.style.border = InputBorder
                 app.valueIsNull = false
             }, 2000);
+            // app.isloding = true;
+            // $("#content-input-submit").css("display","none")
 
         },
+        //把你寫換算時間的丟進來
         reversedMessage: function (updated_at) {
             var timestr = String()
             const nowDate = Date.parse(new Date()) + app.timedifference;
@@ -203,6 +208,7 @@ var app = new Vue({
         },
     },
     mounted() {
+        //自动加载convert方法
         this.GetTodolistprepare();
     }
 
