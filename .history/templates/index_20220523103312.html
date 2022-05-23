@@ -36,7 +36,9 @@
                             <div class="tab_content-table-prepare-title prepare-title">
                                 <span>[[i.title]]</span>
                             </div>
+                            <!-- <button @click="removebutton('[[i.id]]','[[i.title]]')">移除</button> -->
                             <button @click=[[removebutton([[i.id]],[[i.title]])]]>移除</button>
+                            <!-- <button @click="finnshbutton('[[i.id]]','[[i.title]]')">完成</button> -->
                             <button @click=[[finnshbutton([[i.id]],[[i.title]])]]>完成</button>
                         </div>
                     </div>
@@ -46,6 +48,7 @@
             <label for="tab2" @click="GetTodolistfinish">已完成</label>
             <div class="tab_content" id="tab_content">
                 <div class="tab_content-table-finnsh">
+                    <!-- vue的迴圈 -->
                     <template v-for="i in finishlist">
                         <div class="tab_content-table-finnsh-box">
                             <div class="finnsh-title">
